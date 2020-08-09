@@ -6,4 +6,5 @@ file_root = "NIADic/NIADic_data.csv"
 # encoder는 UTF-8과 EUC-KR이 아니라, CP949를 적용해야 함
 dataset = pd.read_csv(file_root, encoding="CP949")
 
-print(dataset.head())
+# term 열을 제외한 다른 열을 삭제
+term_data = dataset.drop(["category", "tag"], axis=1)
