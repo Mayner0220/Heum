@@ -21,6 +21,8 @@ for sentence in term_data["term"]:
     tokenozed_data.append(temp_X)
 
 print(tokenozed_data)
+
+# sentence parameter에서 에러 발생
 model = Word2Vec(sentence=tokenozed_data, size=100, window=5, min_count=5,
                  workers=4, sg=0)
 
