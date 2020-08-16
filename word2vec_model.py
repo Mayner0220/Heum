@@ -6,9 +6,3 @@ model = Word2Vec(sentences=tokenozed_data, size=100, window=5, min_count=5, work
 
 # 모델 저장
 model.wv.save_word2vec_format("Heum_mark1")
-
-# 모델 로드
-# load_model = KeyedVectors.load_word2vec_format("Heum_mark1")
-
-model_result = model.wv.most_similar("과자")
-print(model_result)
