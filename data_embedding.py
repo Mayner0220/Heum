@@ -1,6 +1,4 @@
 from konlpy.tag import Okt
-from gensim.models import Word2Vec
-from gensim.models import KeyedVectors
 from data_preprocessing import term_data
 
 # KoNLPy를 사용하기 위해서는 JAVA_HOME 세팅과 JPype 설정이 필수적
