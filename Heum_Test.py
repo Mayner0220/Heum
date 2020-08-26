@@ -1,5 +1,9 @@
 from model_load import load_model
-import gensim
 
-model = gensim.models.Word2Vec.load("./ko.bin")
-print(model.wv.most_similar("한국"))
+model = load_model()
+
+# return type: list
+check = model.wv.most_similar("확인")
+
+print(check)
+print(type(check))
