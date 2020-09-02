@@ -13,8 +13,8 @@ Input_V = input("[Input]\n>> ")
 Checks = Model.wv.most_similar(Input_V)
 
 # .wv.most_similar과 .most_similar의 차이점은 존재하지 않는 것으로 보임
-# checks = model.most_similar("확인")
+# Checks = Model.most_similar("확인")
 
-for Check in Checks:
-    Result = Hangul.sub('', str(Check))
-    print(Result)
+for check in Checks:
+    result = Hangul.sub('', str(check))
+    print(result)

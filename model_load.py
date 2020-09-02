@@ -13,6 +13,6 @@ def load_model():
 
     if(load_model):
         print("\n---------Loaded Successfully!---------\n")
-        return load_model
+        return Load_model
     else:
         print("Error: Loading Model")
