@@ -15,6 +15,6 @@ Checks = Model.wv.most_similar(Input_V)
 # .wv.most_similar과 .most_similar의 차이점은 존재하지 않는 것으로 보임
 # Checks = Model.most_similar("확인")
 
-for check in Checks:
+for check in Checks[:5]:
     result = Hangul.sub('', str(check))
     print(result)
