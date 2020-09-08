@@ -2,7 +2,7 @@ import gensim
 from gensim.models import KeyedVectors
 
 def load_model():
-    Model = input("[Select Heum version]\n>> ")
+    Model = input("[Select Heum Model]\n>> ")
 
     if(Model == "Ko"):
         Load_model = gensim.models.Word2Vec.load("./ko.bin")
